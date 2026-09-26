@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#140804" />
+  <title>状元坊戏服厂 · 历史成品图册</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="app">
+    <header class="topbar">
+      <button class="seal" id="btn-home" aria-label="回封面">状</button>
+      <div class="brand-text">
+        <div class="t1">状元坊戏服厂</div>
+        <div class="t2" id="crumb">历史成品图册</div>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="btn-search">寻</button>
+      </div>
+    </header>
+    <div class="search-wrap" id="search-wrap">
+      <input id="q" type="search" placeholder="编号 · 行头 · 剧目 · 村落" autocomplete="off" />
+    </div>
+    <main class="stage">
+      <section class="screen" id="screen-home"></section>
+      <section class="screen" id="screen-list"></section>
+      <section class="screen" id="screen-detail"></section>
+      <section class="screen" id="screen-orders"></section>
+      <section class="screen" id="screen-about"></section>
+    </main>
+    <nav class="tabbar">
+      <button class="tab on" data-tab="home"><i>壹</i>封面</button>
+      <button class="tab" data-tab="list"><i>贰</i>图册</button>
+      <button class="tab" data-tab="orders"><i>叁</i>复刻单</button>
+      <button class="tab" data-tab="about"><i>肆</i>厂号</button>
+    </nav>
+    <div class="toast" id="toast"></div>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
